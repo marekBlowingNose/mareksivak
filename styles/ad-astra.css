@@ -1,0 +1,533 @@
+/* Ad astra per aspera */
+
+html
+{
+	padding:0;
+	margin:0;
+}
+body
+{
+	font-family: 'Fira Sans';
+	padding:0;
+	margin:0;
+	margin-top:-23px;
+	
+	font-size:20px;
+	line-height:28px;
+	color:#35302e;
+}
+
+h1, h3, h5
+{
+	font-weight:400;
+}
+
+h1
+{
+	font-size:38px;
+	line-height:1.4;
+}
+
+h3
+{
+	text-align:center;
+	font-size:36px;
+	padding: 20px;
+	line-height:1.4;
+}
+strong
+{
+	font-weight:700;
+}
+
+a
+{
+	color:#bf4230;
+	font-weight:700;
+	cursor:pointer;
+}
+
+a:hover, a:active
+{
+	color:#a9311f;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+}
+
+.btn
+{
+	color:#fff;
+	border-radius:2px;
+	padding:10px 40px;
+	
+	background:#bf4230;
+	font-size:18px;
+}
+
+.btn:hover, .btn:active
+{
+	background:#a9311f;
+	color:#f8f8f8;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+}
+
+.btn-primary
+{
+	box-shadow: 0px -3px #a9311f inset;
+	border:none;
+}
+
+.nav
+{
+	
+	position:fixed;
+	z-index:500;
+    width:200px;
+}
+
+.nav .holder
+{
+	margin-left:20px;
+	margin-top:20px;
+	height:50px;
+}
+
+.logo, .menu
+{
+	display:inline;
+	border:2px solid #fff;
+	padding:5px;
+	font-family:'Quicksand';
+	font-weight:700;
+}
+
+.logo, .menu
+{
+	background: #becdd0;
+	background:rgba(196,210,213,0.4);
+}
+
+.menu
+{
+	background: #becdd0;
+	border-left:none;
+}
+
+.dark .logo, .dark .menu
+{
+
+	border-color:#becdd0;
+	
+	background:rgba(255,255,255,0.4);
+}
+
+
+.intro {
+	background: #464D57;
+	background: url(../img/header2.jpg) no-repeat 70% 50%;
+	background-size: cover;
+	background: #becdd0;
+	color:#312e2b;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+	overflow: hidden;
+}
+
+.marek-sivak
+{
+	position: absolute;
+	width:100%;
+	left: 60%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.marek-sivak .wrapper
+{
+    position: relative;
+}
+
+.marek-sivak h1
+{
+	padding:40px;
+	font-size:62px;
+}
+
+.marek-sivak .deco
+{
+    top:0;
+    bottom:0;
+    width:5px;
+    background:#fff;
+    position:absolute;
+}
+
+
+@media (max-width:990px)
+{
+	.marek-sivak  h1
+	{
+		font-size:42px;
+	}
+	
+	.about img
+	{
+		margin:0!important;
+		right:0!important;
+	}
+}
+
+@media (max-width:700px)
+{
+	.marek-sivak  h1
+	{
+		font-size:36px;
+	}
+}
+
+@media (max-width:600px)
+{
+	.marek-sivak
+	{
+		left: 5%;
+		top: 50%;
+		-webkit-transform: translate(0%, -50%);
+		-moz-transform: translate(0%, -50%);
+		-o-transform: translate(0%, -50%);
+		-ms-transform: translate(0%, -50%);
+		transform: translate(0%, -50%);
+	}
+	
+	.marek-sivak h1
+	{
+		font-size:28px;
+        padding:28px;
+	}
+}
+
+@media (max-width:580px)
+{
+	.marek-sivak  h1
+	{
+		font-size:24px;
+        padding:25px;
+	}
+	
+	h3
+	{
+		font-size:28px;
+	}
+}
+
+@media (max-width:400px)
+{
+    
+	.marek-sivak  h1
+	{
+		font-size:21px;
+        padding:20px;
+	}
+	
+	h3
+	{
+		font-size:24px;
+	}
+}
+
+@media (max-width:350px)
+{
+	.marek-sivak  h1
+	{
+		font-size:18px;
+	}
+	
+	h3
+	{
+		font-size:20px;
+	}
+}
+
+.intro .btn
+{
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	
+	padding:10px 20px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	-o-transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+
+.intro .btn i
+{
+	padding-left:15px;
+	padding-right:15px;
+	opacity:0.6;
+}
+.section
+{
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+.work
+{
+	padding-top:83px;
+	padding-bottom:83px;
+}
+
+.dribbble-feed
+{
+	margin-top:13px;
+	margin-bottom:43px;
+}
+
+.dribbble-feed .shot
+{
+	display:inline;
+}
+
+@media (max-width: 991px)
+{
+	.dribbble-feed .shot:last-child
+	{
+		display:none;
+	}
+}
+
+.dribbble-feed .col-md-6
+{
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.dribbble-feed img
+{
+	width:280px;
+	width:100%;
+	margin-top:20px;
+	padding:15px;
+	border:2px solid #f8f8f8;
+}
+
+.dribbble-btn
+{
+	margin:50px auto;
+	background: #EA4C89;
+	box-shadow: 0px -3px #c3386e inset;
+}
+
+.dribbble-btn:hover, .dribbble-btn:active
+{
+	background:#c3386e;
+}
+.about
+{
+	padding-bottom:150px;
+}
+
+.about h3
+{
+	padding:0;
+	padding-bottom:20px;
+	font-weight:700;
+	font-family:'Quicksand';
+	color:#756234;
+	text-align:center;
+}
+
+.about .bordered
+{
+	border:2px solid #dccead;
+}
+
+.about .row
+{
+	margin:0 auto;
+}
+
+.about img
+{
+	width:100%;
+	margin:-2px;
+	position:relative;
+	right:-4px;
+}
+
+.about p.main
+{
+	padding:30px;
+}
+
+
+.about p.top
+{
+	max-width:480px;
+	background:#385b8b;
+	color:#c2d2e7;
+	margin:0;
+	padding:40px;
+}
+
+.about p.bottom
+{
+	max-width:480px;
+	background:#c2d2e7;
+	margin:0;
+	padding:40px;
+	position:relative;
+	float:right;
+}
+
+.social
+{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.social .link
+{
+	color:#2B4B7C;
+	
+	padding:20px;
+	font-size:1.5em;
+}
+.contact
+{
+	background:#becdd0;
+	
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.form-wrapper
+{
+	margin:0 auto;
+	max-width:400px;
+}
+
+.form-item
+{
+	width:100%;
+	margin-bottom:30px;
+}
+
+.form-item input, .form-item textarea
+{
+	border-radius:2px;
+	border:2px solid #999;
+	background:none;
+	font-size:18px;
+	
+	min-height:42px;
+}
+
+::-webkit-input-placeholder {
+   color: #999;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #999;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;  
+}
+
+:-ms-input-placeholder {  
+   color: #999;
+}
+
+
+.form-item textarea
+{
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+}
+
+.contact:hover .form-item input, .contact:hover .form-item textarea
+{
+	border-color:#51696e;
+}
+
+.contact:hover 
+{
+	background:#c4d2d5;
+}
+
+.border
+{
+	
+	height:2px;
+	border-radius:2px;
+	max-width:600px;
+	width:100%;
+	margin:0 auto;
+	margin-bottom:40px;
+	background:#464D57;
+}
+
+.footer ul
+{
+	position:relative;
+}
+.footer li
+{
+	font-size:15px;
+	padding:10px;
+}
+.footer h5
+{
+	font-family:'Quicksand';
+	font-weight:700;
+	font-size:15px;
+}
+
+
+
+.dribbble
+{
+	color:#EA4C89;
+}
+
+.dribbble:hover, .dribbble:active
+{
+	color:#c3386e;
+}
+
+.tick
+{
+    padding:20px;
+    border-radius:2px;
+    border:2px solid #35302e;
+}
+
+.tick .symbol
+{
+    font-size:3em;
+    text-align:center;
+}
+
+.tick .thank-you
+{
+    padding:0;
+}
+
+
