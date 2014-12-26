@@ -27,6 +27,8 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/dominus-illuminatio-mea.css" />
+	<link rel="stylesheet" type="text/css" href="styles/animations/animate.css" />
+	<link rel="stylesheet" type="text/css" href="styles/animations/animate-customized.css" />
 	<link rel="stylesheet" type="text/css" href="styles/anim.css" />
 	<link rel="stylesheet" type="text/css" href="styles/ad-astra.css" />
 	
@@ -39,7 +41,7 @@
 		<div class="midnightHeader default">
 			<div class="holder">
 				<div class="logo">
-					Marek Sivak
+					<a class="scroll" alt="Marek Sivak" href="#top">Marek Sivak</a>
 				</div>
 				<div class="menu">
 					<div class="parent" style="position:absolute;">
@@ -56,12 +58,12 @@
     
    
     
-	<div class="intro" data-midnight="light" id="top">
+	<div name="top" class="intro" data-midnight="light">
 		<div class="marek-sivak">
             <div class="wrapper">
-			<h1>Hi, my name is Marek Sivak <br>
-			and I design <strong>web and mobile</strong> <br>
-			interfaces.</h1>
+                <h1>Hi, my name is Marek Sivak <br>
+                and I design <strong>web and mobile</strong> <br>
+                interfaces.</h1>
             </div>
             <div class="deco"></div>
 		</div>
@@ -151,11 +153,11 @@
 		<h3>Contact me for work or just say hi!</h3>
 		
 		<div class="row margintop6">
-			<div class="col-md-6 marginbottom5">
+			<div id="direct-mail" class="col-md-6 marginbottom5">
 				Email me directly at <a href="mailto:hi@mareksivak.me">hi@mareksivak.me</a> <br>or use this form.
 			</div>
 			
-			<div class="col-md-6">
+			<div id="contact-form" class="col-md-6">
 				<form role="form" id="contact">
 					<div class="form-item">
 						<input type="text" placeholder="Name" class="form-control" id="name" name="name" placeholder="" required="">
@@ -225,6 +227,7 @@
 	
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
 	<script src="scripts/helpers/jquery.jribbble.min.js"></script>
 	<script src="scripts/helpers/jquery.autosize.js"></script>
 	<script src="scripts/helpers/midnight.js"></script>
@@ -232,16 +235,17 @@
 	
 	<script src="scripts/helpers/smooth-scroll.js"></script>
 	<script src="scripts/helpers/retina.js"></script>
+	<script src="scripts/helpers/jquery.waypoints.js"></script>
 	<script src="scripts/helpers/madam-s.js"></script>
 	
 	
 <script type="text/javascript">
-
+/*
 $('.dribbble-feed').hide();
 jQuery(window).load(function(){
 $('.dribbble-feed').fadeIn();
 });
-
+*/
 $(document).ready(
 	
   function getDribbbleShots() {   

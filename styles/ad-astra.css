@@ -124,7 +124,12 @@ a:hover, a:active
 	background:rgba(255,255,255,0.4);
 }
 
-
+.logo a:hover, .logo a:focus
+{
+    color:#a9311f;
+    color:#bf4230;
+    text-decoration: none;
+}
 .intro {
 	background: #464D57;
 	background: url(../img/header2.jpg) no-repeat 70% 50%;
