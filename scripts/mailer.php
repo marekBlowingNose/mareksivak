@@ -18,8 +18,8 @@ echo "mailer";
         $name = strip_tags(trim($_POST["name"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $message = trim($_POST["message"]);
-        $honey = trim($_POST["honey"]);
+        $message = strip_tags(trim($_POST["message"]));
+        $honey = strip_tags(trim($_POST["honey"]));
 
         // Check that data was sent to the mailer.
         if ( !empty($honey)) {
