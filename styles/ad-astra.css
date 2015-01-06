@@ -317,10 +317,15 @@ a:hover, a:active
 
 @media (max-width: 991px)
 {
-	.dribbble-feed .shot:last-child
+	/*.dribbble-feed .shot:last-child
 	{
 		display:none;
-	}
+	}*/
+    
+    .about .bordered
+    {
+        border:none!important;
+    }
 }
 
 .dribbble-feed .col-md-6

@@ -86,7 +86,40 @@ $(document).ready(function() {
 	
 
     
-    $('.work, #contact-form')
+    $('.work')
+				.waypoint({
+					triggerOnce: true,
+					handler: function(direction)
+					{
+						if (direction == 'down')
+						{
+							var $this = $(this);
+                            
+                                $this.css("opacity", "1");
+                                $('.dribbble-feed').find('.shot').each(function() {
+                                    
+                                    // generates random from 0 to 3
+                                    var duration = Math.floor(Math.random() * 4)
+                                    
+                                    duration = 3 + duration*1;
+                                    // fyi:  this = .shot
+                                    $(this).addClass('animated' + duration + '00 zoomInShort');
+                                    $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',  function()
+                                   {
+                                         $this.removeClass('animated' + duration + '00 zoomInShort');
+                                   });
+                                });
+                                
+                          /*
+                            */
+                            
+
+						}
+					},
+					offset: '85%'
+				});
+    
+    $('#contact-form')
 				.waypoint({
 					triggerOnce: true,
 					handler: function(direction)
@@ -108,7 +141,7 @@ $(document).ready(function() {
 					},
 					offset: '85%'
 				});
-        
+    
     $('.about, #direct-mail')
 				.waypoint({
 					triggerOnce: true,

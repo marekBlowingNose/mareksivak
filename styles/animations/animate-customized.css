@@ -561,6 +561,38 @@
 
 /**/
 
+@-webkit-keyframes zoomInShort {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: scale3d(.8, .8, .8);
+            transform: scale3d(.8, .8, .8);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInShort {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: scale3d(.8, .8, .8);
+            transform: scale3d(.8, .8, .8);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomInShort {
+  -webkit-animation-name: zoomInShort;
+          animation-name: zoomInShort;
+}
+
+
+/**/
+
 @-webkit-keyframes moveInBottomShort {
 
 
